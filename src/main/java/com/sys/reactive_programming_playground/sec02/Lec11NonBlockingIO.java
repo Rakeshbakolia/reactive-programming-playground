@@ -4,7 +4,6 @@ import com.sys.reactive_programming_playground.common.Util;
 import com.sys.reactive_programming_playground.sec02.client.ExternalServiceClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import reactor.core.publisher.Mono;
 
 public class Lec11NonBlockingIO {
 
@@ -27,6 +26,6 @@ public class Lec11NonBlockingIO {
 //        01:28:19.852 INFO  [   rakesh-nio-1] c.s.r.common.DefaultSubscriber :  received : product-3
 //        01:28:19.853 INFO  [   rakesh-nio-1] c.s.r.common.DefaultSubscriber :  received : product-1
 
-        Util.sleepSecond(2);
+        Util.sleepSeconds(2);
     }
 }

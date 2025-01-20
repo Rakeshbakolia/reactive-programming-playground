@@ -13,6 +13,6 @@ public class Lec11Assignment {
                     .subscribe(Util.subscriber());
         }
 
-        Util.sleepSecond(3);
+        Util.sleepSeconds(3);
     }
 }

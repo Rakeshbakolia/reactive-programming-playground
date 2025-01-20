@@ -29,7 +29,7 @@ public class Lec03FluxSinkThreadSafety {
             Thread.ofPlatform().start(runnable);
         }
 
-        Util.sleepSecond(3);
+        Util.sleepSeconds(3);
         log.info("Size of list : {}", list.size());
     }
 
@@ -49,7 +49,7 @@ public class Lec03FluxSinkThreadSafety {
             Thread.ofPlatform().start(runnable);
         }
 
-        Util.sleepSecond(3);
+        Util.sleepSeconds(3);
         log.info("Size of list : {}", list.size());
     }
 }

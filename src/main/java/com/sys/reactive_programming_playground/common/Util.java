@@ -2,7 +2,6 @@ package com.sys.reactive_programming_playground.common;
 
 import com.github.javafaker.Faker;
 import org.reactivestreams.Subscriber;
-import reactor.core.publisher.Mono;
 
 import java.time.Duration;
 
@@ -22,7 +21,7 @@ public class Util {
         return faker;
     }
 
-    public static void sleepSecond(int seconds){
+    public static void sleepSeconds(int seconds){
         try {
             Thread.sleep(Duration.ofSeconds(seconds));
         } catch (InterruptedException e) {

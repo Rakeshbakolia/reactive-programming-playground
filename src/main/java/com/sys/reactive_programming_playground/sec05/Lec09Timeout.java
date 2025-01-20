@@ -15,7 +15,7 @@ public class Lec09Timeout {
                 .timeout(Duration.ofSeconds(2), fallback2())
                 .subscribe(Util.subscriber());
 
-        Util.sleepSecond(10);
+        Util.sleepSeconds(10);
     }
 
     private static Mono<String> getProductName(){

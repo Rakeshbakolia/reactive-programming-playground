@@ -21,7 +21,7 @@ public class Lec08MonoFromFuture {
         Mono.fromFuture(Lec08MonoFromFuture::getName)
                 .subscribe(Util.subscriber());
 
-        Util.sleepSecond(1);
+        Util.sleepSeconds(1);
     }
 
     private static CompletableFuture<String> getName(){

@@ -13,6 +13,6 @@ public class Lec04Delay {
                 .delayElements(Duration.ofSeconds(1))
                 .subscribe(Util.subscriber());
 
-        Util.sleepSecond(12);
+        Util.sleepSeconds(12);
     }
 }

@@ -22,13 +22,13 @@ public class Lec10MonoDefer {
     private static Mono<Integer> createPublisher(){
         log.info("creating publisher");
         var list = List.of(1,2,3,4);
-        Util.sleepSecond(1);
+        Util.sleepSeconds(1);
         return Mono.fromSupplier(() -> sum(list));
     }
 
     private static int sum (List<Integer> list){
         log.info("finding the sum of list : {}", list);
-        Util.sleepSecond(3);
+        Util.sleepSeconds(3);
         return list.stream().mapToInt(a->a).sum();
     }
 }

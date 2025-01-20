@@ -26,11 +26,11 @@ public class Lec04FluxCreateDownstreamDemand {
             fluxSink.complete();
         }).subscribe(subscriber);
 
-        Util.sleepSecond(2);
+        Util.sleepSeconds(2);
         subscriber.getSubscription().request(2);
-        Util.sleepSecond(2);
+        Util.sleepSeconds(2);
         subscriber.getSubscription().request(2);
-        Util.sleepSecond(5);
+        Util.sleepSeconds(5);
         subscriber.getSubscription().cancel();
         subscriber.getSubscription().request(2);
     }
@@ -49,11 +49,11 @@ public class Lec04FluxCreateDownstreamDemand {
 
         }).subscribe(subscriber);
 
-        Util.sleepSecond(2);
+        Util.sleepSeconds(2);
         subscriber.getSubscription().request(2);
-        Util.sleepSecond(2);
+        Util.sleepSeconds(2);
         subscriber.getSubscription().request(2);
-        Util.sleepSecond(5);
+        Util.sleepSeconds(5);
         subscriber.getSubscription().cancel();
         subscriber.getSubscription().request(2);
     }

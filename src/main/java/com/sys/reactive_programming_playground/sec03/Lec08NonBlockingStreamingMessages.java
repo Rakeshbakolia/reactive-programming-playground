@@ -17,6 +17,6 @@ public class Lec08NonBlockingStreamingMessages {
         client.getNames()
                 .subscribe(Util.subscriber("subscriber-2"));
 
-        Util.sleepSecond(6);
+        Util.sleepSeconds(6);
     }
 }

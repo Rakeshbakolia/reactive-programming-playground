@@ -18,7 +18,7 @@ public class NameGenerator {
     }
 
     private static String generateName(){
-        Util.sleepSecond(1);
+        Util.sleepSeconds(1);
         return Util.faker().name().firstName();
     }
 }

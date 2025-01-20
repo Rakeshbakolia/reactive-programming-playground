@@ -17,6 +17,6 @@ public class Lec09FluxInterval {
                 .map(i -> Util.faker().name().firstName())
                 .subscribe(Util.subscriber());
 
-        Util.sleepSecond(10);
+        Util.sleepSeconds(10);
     }
 }

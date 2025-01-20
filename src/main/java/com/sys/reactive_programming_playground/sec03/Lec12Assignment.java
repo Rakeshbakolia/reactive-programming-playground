@@ -13,6 +13,6 @@ public class Lec12Assignment {
         client.getPriceChanges()
                 .subscribe(subscriber);
 
-        Util.sleepSecond(20);
+        Util.sleepSeconds(20);
     }
 }
